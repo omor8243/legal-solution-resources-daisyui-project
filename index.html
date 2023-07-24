@@ -14,31 +14,78 @@
   <link
     href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
-    <!--customize tailwind class-->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
+  <!--fontawesome cdn-->
+  <script src="https://kit.fontawesome.com/6b970ed50d.js" crossorigin="anonymous"></script>
+  <!--customize tailwind class-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            colordark: '#414040',
+            btnbg: '#B68C5A',
           }
         }
       }
-    </script>
+    }
+  </script>
   <!--some customize css-->
-    <style>
-      .font-poppins{
-        font-family:'Poppins', sans-serif;;
-      }
-      .font-eb-garamond{
-        font-family: 'EB Garamond', serif;
-      }
-    </style>
+  <style>
+    .font-1 {
+      font-family: 'Poppins', sans-serif;
+      ;
+    }
+
+    .font-2 {
+      font-family: 'EB Garamond', serif;
+    }
+  </style>
 </head>
 
 <body>
 
+  <header>
+    <!--navbar part start-->
+    <section class="container mx-auto mt-16">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="#">Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="#">Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="#">Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+              </ul>
+            </div>
+            <div class="flex relative">
+              <img src="./images/logo.png" class="" alt="">
+              <p class="text-4xl text-colordark font-extrabold font-font-2 absolute pl-16 ">daisyUI</p>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex font-font-1">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services<i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="#">Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="#">Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a href="#">Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+            </ul>
+          </div>
+          <div class=" ">
+            <button class="btn  btn-secondary  bg-btnbg">Free Consultation</button>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--navbar part end-->
+  </header>
+  <main></main>
+  <footer></footer>
 </body>
 
 </html>
